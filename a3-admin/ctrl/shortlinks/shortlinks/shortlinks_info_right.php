@@ -1,0 +1,41 @@
+<div class="row mt-3">
+    
+    <div class="col-lg-6">
+        <div class="mt-4 p-1 bg-transparent border text-dark rounded">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 col-lg-9 bd-highlight">
+                    <h5 class="text-secondary"><?php echo ucfirst($totalName).' '. ucfirst($viewedName);?></h5>
+                    <h5><?php echo hrfFormat($site_info_row['total_tasks_shortlinks']);?></h5>
+                </div>
+                <div class="p-2 col-lg-3 flex-shrink-1 bd-highlight"><i class="bi h1 bi-eye text-primary"></i></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-6">
+        <div class="mt-4 p-1 bg-transparent border text-dark rounded">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 col-lg-9 bd-highlight">
+                    <h5 class="text-secondary"><?php echo ucfirst($totalName).' '. ucfirst($earnedName);?></h5>
+                    <h5><?php echo number_format($site_info_row['total_shortlinks_amount'],$site_info_row['truncate_currency']).' '. strtoupper($selectedCoin);?></h5>
+                </div>
+                <div class="p-2 col-lg-3 flex-shrink-1 bd-highlight"><i class="bi h1 bi-wallet text-primary"></i></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-6">
+        <div class="mt-4 p-1 bg-transparent border text-dark rounded">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 col-lg-9 bd-highlight">
+                    <h5 class="text-secondary"><?php echo ucfirst($totalName).' '. ucfirst($refName).' '. ucfirst($earnedName);?></h5>
+                    <h5><?php echo number_format($site_info_row['total_shortlinks_ref_amount'],$site_info_row['truncate_currency']).' '. strtoupper($selectedCoin);?></h5>
+                </div>
+                <div class="p-2 col-lg-3 flex-shrink-1 bd-highlight"><i class="bi h1 bi-wallet text-primary"></i></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-6"></div>
+    
+</div>

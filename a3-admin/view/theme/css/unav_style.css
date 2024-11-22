@@ -1,0 +1,16 @@
+/*mobile menu*/
+#admin_nav_side_mobi{
+    display: none;
+}
+
+/* Medium devices (landscape tablets, 991.98px and dwon) */
+@media screen and (max-width: 991.98px) { 
+    
+    #admin_nav_side_mobi{
+        display: block;
+    }
+    
+    #admin_nav_side{
+        display: none;
+    }
+}
