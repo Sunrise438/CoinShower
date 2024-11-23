@@ -1,9 +1,9 @@
 <?php
 
 $servername = 'https://github.com/Sunrise438/bbvjxbjhnbc';
-$username = 'Sunrise438';
-$password = 'MyBiGbOss#8';
-$dbname = 'Sunrise438';
+$username = '';
+$password = '';
+$dbname = '';
 $gp = '';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
